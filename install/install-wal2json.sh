@@ -37,7 +37,7 @@ mkdir -p "$WAL2JSON_DIR"
 if [ ! -f "$WAL2JSON_DIR/$VERSION/$FILE_NAME" ]; then
   mkdir -p "$WAL2JSON_DIR/$VERSION"
   docker_curl -L \
-    "https://github.com/getsentry/wal2json/releases/download/$VERSION/$FILE_NAME" \
+    "https://gitee.com/li-jia-dong/wal2json/releases/download/$VERSION/$FILE_NAME" \
     >"$WAL2JSON_DIR/$VERSION/$FILE_NAME"
 fi
 cp "$WAL2JSON_DIR/$VERSION/$FILE_NAME" "$FILE_TO_USE"
